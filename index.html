@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vinayak Patidar · Resume</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="#top">Vinayak Patidar</a>
+    <div class="bar-actions">
+      <button class="btn btn-line btn-sm" id="themeBtn" type="button" aria-label="Switch light or dark theme">Theme</button>
+      <a class="btn btn-chai btn-sm" href="#contact">Contact</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<div class="wrap">
+
+  <section class="hero" style="padding-top:44px">
+    <span class="tag">IIMB DBE · [Your batch, e.g. 2026–2029]</span>
+    <h1>[Your one-line headline, e.g. Learning to build things for the web.]</h1>
+    <p class="lead">[Two lines about you: what you study, what you are interested in and what you are looking for.]</p>
+    <div class="row">
+      <a class="btn btn-chai" href="#work">See my work</a>
+      <a class="btn btn-line" href="#contact">Get in touch</a>
+    </div>
+
+    <div class="profile">
+      <div class="avatar" role="img" aria-label="Placeholder for Vinayak's photo">
+        <div>VP<small>Replace this block with your photo</small></div>
+      </div>
+      <dl>
+        <div><dt>Program</dt><dd>[Your program]</dd></div>
+        <div><dt>Institute</dt><dd>[Your institute]</dd></div>
+        <div><dt>Interests</dt><dd>[Your interests]</dd></div>
+        <div><dt>Location</dt><dd>[Your city]</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="sec-head">
+      <h2>[Heading for your projects and experience.]</h2>
+      <p>[One line about this section.] Tap a filter to narrow the list.</p>
+    </div>
+    <div class="chips" role="group" aria-label="Filter work">
+      <button class="chip" type="button" data-f="all" aria-pressed="true">All (3)</button>
+      <button class="chip" type="button" data-f="project" aria-pressed="false">Projects</button>
+      <button class="chip" type="button" data-f="experience" aria-pressed="false">Experience</button>
+    </div>
+    <div class="cards">
+      <article class="pcard" data-c="project">
+        <div class="meta">[Year] · Project</div>
+        <h3>[Project name]</h3>
+        <p class="sub">[Where or for whom]</p>
+        <ul>
+          <li>[What you built or did.]</li>
+          <li>[What the result was.]</li>
+        </ul>
+        <div class="pills"><span class="pill">[Skill]</span><span class="pill">[Skill]</span></div>
+      </article>
+      <article class="pcard" data-c="project">
+        <div class="meta">[Year] · Project</div>
+        <h3>[Project name]</h3>
+        <p class="sub">[Where or for whom]</p>
+        <ul>
+          <li>[What you built or did.]</li>
+          <li>[What the result was.]</li>
+        </ul>
+        <div class="pills"><span class="pill">[Skill]</span><span class="pill">[Skill]</span></div>
+      </article>
+      <article class="pcard" data-c="experience">
+        <div class="meta">[Year] · Experience</div>
+        <h3>[Role or activity]</h3>
+        <p class="sub">[Organisation]</p>
+        <ul>
+          <li>[What you did.]</li>
+          <li>[What you learned or achieved.]</li>
+        </ul>
+        <div class="pills"><span class="pill">[Skill]</span><span class="pill">[Skill]</span></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="sec-head">
+      <h2>Skills.</h2>
+    </div>
+    <div class="skillgroup">
+      <h3>[Skill group 1]</h3>
+      <div class="pills"><span class="pill">[Skill]</span><span class="pill">[Skill]</span><span class="pill">[Skill]</span></div>
+    </div>
+    <div class="skillgroup">
+      <h3>[Skill group 2]</h3>
+      <div class="pills"><span class="pill">[Skill]</span><span class="pill">[Skill]</span></div>
+    </div>
+    <div class="skillgroup">
+      <h3>Languages</h3>
+      <div class="pills"><span class="pill">[Language]</span><span class="pill">[Language]</span></div>
+    </div>
+  </section>
+
+  <section id="journey">
+    <div class="sec-head">
+      <h2>Education &amp; milestones.</h2>
+    </div>
+    <ol class="tl">
+      <li><time>[Year]</time><h3>[Education or milestone]</h3><p>[One line of detail.]</p></li>
+      <li><time>[Year]</time><h3>[Education or milestone]</h3><p>[One line of detail.]</p></li>
+      <li><time>[Year]</time><h3>[Education or milestone]</h3><p>[One line of detail.]</p></li>
+    </ol>
+  </section>
+
+  <section id="contact">
+    <div class="dark">
+      <h2>Let’s connect.</h2>
+      <p>[One line on what you are open to, e.g. internships or collaborations.]</p>
+      <a class="chan" href="mailto:your.email@example.com"><span>Email</span><span>your.email@example.com</span></a>
+      <a class="chan" href="tel:+910000000000"><span>Phone</span><span>+91 00000 00000</span></a>
+      <a class="chan" href="https://www.linkedin.com/" rel="noopener"><span>LinkedIn</span><span>Add your profile link</span></a>
+    </div>
+
+    <form id="f" novalidate>
+      <label for="n">Your name</label>
+      <input id="n" name="n" placeholder="e.g., Rohan Mehta" required autocomplete="name">
+      <label for="e">Your email</label>
+      <input id="e" name="e" type="email" placeholder="rohan@company.com" required autocomplete="email">
+      <label for="t">What is this about?</label>
+      <select id="t">
+        <option>Opportunity</option>
+        <option>Collaboration</option>
+        <option>Question</option>
+        <option>Something else</option>
+      </select>
+      <div class="radios" role="radiogroup" aria-label="Who are you">
+        <label><input type="radio" name="who" value="Recruiter / founder" checked> Recruiter / founder</label>
+        <label><input type="radio" name="who" value="Student / peer"> Student / peer</label>
+      </div>
+      <label for="m">Message</label>
+      <textarea id="m" placeholder="Tell me what you have in mind." required></textarea>
+      <button class="btn btn-chai" type="submit">Send message</button>
+      <p class="formnote" id="note" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Vinayak Patidar</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
